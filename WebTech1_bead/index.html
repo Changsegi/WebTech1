@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebTech-Beadando-ISYZAV</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/sajat.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+</head>
+<body bgcolor="#ffd700">
+
+<div class="menu">
+
+    <a href="#elso-par" title="Kepek">Képek   |</a>
+    <a href="#masodik-par" title="Loremipsum1">Lorem impsum 1.0   |</a>
+    <a href="#harmadik-par" title="Loremipsum2">Lorem ipsum 1.2   |</a>
+    <a href="#negyeidk-par" title="Urlpa">Űrlap   |</a>
+    <a href="#otodik-par" title="Tablazat" target="_self">Táblázat   |</a>
+    <a href="#hatodik-par" title="Lista">Lista   </a>
+    <br>
+    <p style="color: orange">Készítette: Győri Ádám - ISYZAV</p>
+
+</div>
+
+<hr>
+
+
+<div  id="elso-par" class="one">
+    <h2>1. Képek, JQuery animációk</h2>
+    <p align="center">
+        <img id="effect" src="/kepek/cat2.jpg" alt="Macska" style="width:420px;height:420px;" title="cica">
+        <img id="kep2" src="/kepek/cat3.jpg" alt="Macska" style="width:420px;height:420px;" title="még 1 cica">
+        <img id="kep3" src="/kepek/rustyspottedcat.jpg" alt="Macska" style="width:420px;height:420px;" title="ez is cica">
+    </p>
+
+
+    <select name="effects" id="effectTypes">
+        <option value="blind">Blind</option>
+        <option value="bounce">Bounce</option>
+        <option value="clip">Clip</option>
+        <option value="drop">Drop</option>
+        <option value="explode">Explode</option>
+        <option value="fade">Fade</option>
+        <option value="fold">Fold</option>
+        <option value="highlight">Highlight</option>
+        <option value="puff">Puff</option>
+        <option value="pulsate">Pulsate</option>
+        <option value="scale">Scale</option>
+        <option value="shake">Shake</option>
+        <option value="size">Size</option>
+        <option value="slide">Slide</option>
+        <option value="transfer">Transfer</option>
+    </select>
+
+    <button id="esemenygomb" class="ui-state-default ui-corner-all">Run Effect</button>
+
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet libero nisl, a laoreet orci rhoncus at. Vestibulum tincidunt eget leo id tincidunt. Proin rutrum dapibus massa, ut varius est dapibus a. Mauris egestas ligula sem, non tincidunt ex tristique et. Etiam sit amet aliquet ante. Vivamus a malesuada libero, ac tincidunt sem. Aliquam accumsan nibh id molestie rhoncus. Praesent non tellus accumsan, egestas nisi non, rhoncus magna. Etiam congue convallis condimentum.
+    </p>
+</div>
+
+<hr>
+
+<div id="masodik-par" class="two">
+    <h2>2. Paragrafus eltüntése és megjelenítése (azaonsító alapú)</h2>
+    <p id="hideshow" class="elso">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet libero nisl, a laoreet orci rhoncus at. Vestibulum tincidunt eget leo id tincidunt. Proin rutrum dapibus massa, ut varius est dapibus a. Mauris egestas ligula sem, non tincidunt ex tristique et. Etiam sit amet aliquet ante. Vivamus a malesuada libero, ac tincidunt sem. Aliquam accumsan nibh id molestie rhoncus. Praesent non tellus accumsan, egestas nisi non, rhoncus magna. Etiam congue convallis condimentum.
+        Duis ac dui cursus, fermentum magna et, lobortis libero. Nunc vel nulla nulla. Nulla quam enim, lobortis sed dignissim in, mattis in ipsum. Fusce justo dui, pretium maximus ultricies et, finibus sit amet turpis. Curabitur efficitur mi vel arcu tempor, non efficitur lorem condimentum. Integer vulputate porttitor nunc, id malesuada felis interdum id. Nullam tempor porta nulla quis aliquam. Fusce id justo vitae massa venenatis mattis et et sapien. Nunc eu dui in augue feugiat iaculis et in odio. In sed enim imperdiet sapien porttitor rhoncus eget euismod lectus. Vivamus porta ante vitae eros pretium ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc venenatis accumsan tortor, vitae rutrum erat consequat nec.
+
+        Fusce non ligula sit amet ipsum faucibus sollicitudin a quis libero. Sed eleifend porttitor condimentum. Cras gravida pretium cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc sit amet diam semper, ornare arcu sit amet, molestie libero. Curabitur vehicula aliquam condimentum. Cras aliquet volutpat vehicula. Curabitur sit amet enim porta magna dignissim lobortis sit amet id odio. In hac habitasse platea dictumst. Praesent posuere vitae nulla nec eleifend. Vestibulum ultrices tincidunt nulla, blandit feugiat ex ornare non. Curabitur auctor non justo eget finibus. Aliquam placerat velit eget nisi condimentum bibendum. Integer sed sodales erat, at ultrices ex. Etiam tempor nisl a augue ornare, nec faucibus nisl scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+        In hac habitasse platea dictumst. Duis eget eros a odio venenatis cursus. Donec ornare lorem a leo maximus commodo. Pellentesque non dolor enim. Aliquam consequat velit vel velit finibus, et mollis dolor viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris tincidunt pellentesque venenatis. Mauris ultricies ornare augue at ultricies. Sed dictum at nibh et vehicula. Aliquam erat volutpat. Praesent sagittis odio quam, a ultricies ante pretium eget. Curabitur in enim vitae justo efficitur ultricies.
+
+        Phasellus luctus mattis cursus. Praesent consectetur ligula eget ante porttitor placerat. Etiam ultrices urna nec vestibulum blandit. Duis interdum augue sit amet felis efficitur, a interdum odio cursus. Mauris sem diam, rhoncus sit amet justo at, tincidunt rutrum velit. Curabitur at ipsum id justo suscipit rhoncus. Duis in eleifend lorem.
+    </p>
+    <script>
+        document.getElementById("hideshow").style.color = "blue";
+        document.getElementById("hideshow").style.fontFamily = "Arial";
+        document.getElementById("hideshow").style.fontSize = "larger";
+    </script>
+    <button id="hide">Eltüntet</button>
+    <button id="show">Megjelenít</button>
+</div>
+
+<hr>
+
+<div id="harmadik-par" class="one">
+    <h2>3. Paragrafusok (2,3) eltüntése és megjelenítése (osztály alapú)</h2>
+    <p id="elsosormod" class="elso">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet libero nisl, a laoreet orci rhoncus at. Vestibulum tincidunt eget leo id tincidunt. Proin rutrum dapibus massa, ut varius est dapibus a. Mauris egestas ligula sem, non tincidunt ex tristique et. Etiam sit amet aliquet ante. Vivamus a malesuada libero, ac tincidunt sem. Aliquam accumsan nibh id molestie rhoncus. Praesent non tellus accumsan, egestas nisi non, rhoncus magna. Etiam congue convallis condimentum.
+        Duis ac dui cursus, fermentum magna et, lobortis libero. Nunc vel nulla nulla. Nulla quam enim, lobortis sed dignissim in, mattis in ipsum. Fusce justo dui, pretium maximus ultricies et, finibus sit amet turpis. Curabitur efficitur mi vel arcu tempor, non efficitur lorem condimentum. Integer vulputate porttitor nunc, id malesuada felis interdum id. Nullam tempor porta nulla quis aliquam. Fusce id justo vitae massa venenatis mattis et et sapien. Nunc eu dui in augue feugiat iaculis et in odio. In sed enim imperdiet sapien porttitor rhoncus eget euismod lectus. Vivamus porta ante vitae eros pretium ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc venenatis accumsan tortor, vitae rutrum erat consequat nec.
+
+        Fusce non ligula sit amet ipsum faucibus sollicitudin a quis libero. Sed eleifend porttitor condimentum. Cras gravida pretium cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc sit amet diam semper, ornare arcu sit amet, molestie libero. Curabitur vehicula aliquam condimentum. Cras aliquet volutpat vehicula. Curabitur sit amet enim porta magna dignissim lobortis sit amet id odio. In hac habitasse platea dictumst. Praesent posuere vitae nulla nec eleifend. Vestibulum ultrices tincidunt nulla, blandit feugiat ex ornare non. Curabitur auctor non justo eget finibus. Aliquam placerat velit eget nisi condimentum bibendum. Integer sed sodales erat, at ultrices ex. Etiam tempor nisl a augue ornare, nec faucibus nisl scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+        In hac habitasse platea dictumst. Duis eget eros a odio venenatis cursus. Donec ornare lorem a leo maximus commodo. Pellentesque non dolor enim. Aliquam consequat velit vel velit finibus, et mollis dolor viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris tincidunt pellentesque venenatis. Mauris ultricies ornare augue at ultricies. Sed dictum at nibh et vehicula. Aliquam erat volutpat. Praesent sagittis odio quam, a ultricies ante pretium eget. Curabitur in enim vitae justo efficitur ultricies.
+
+        Phasellus luctus mattis cursus. Praesent consectetur ligula eget ante porttitor placerat. Etiam ultrices urna nec vestibulum blandit. Duis interdum augue sit amet felis efficitur, a interdum odio cursus. Mauris sem diam, rhoncus sit amet justo at, tincidunt rutrum velit. Curabitur at ipsum id justo suscipit rhoncus. Duis in eleifend lorem.
+    </p>
+
+    <button id="hide-2">Eltüntet</button>
+    <button id="show-2">Megjelenít</button>
+    <button type="button"
+            onclick="document.getElementById('harmadik-par').style.color = 'red'">
+        Piros szöveg</button>
+</div>
+
+<hr>
+
+<div id="negyeidk-par" class="two">
+    <h2 align="center">4. Űrlap+ validáció</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet libero nisl, a laoreet orci rhoncus at. Vestibulum tincidunt eget leo id tincidunt. Proin rutrum dapibus massa, ut varius est dapibus a. Mauris egestas ligula sem, non tincidunt ex tristique et. Etiam sit amet aliquet ante. Vivamus a malesuada libero, ac tincidunt sem. Aliquam accumsan nibh id molestie rhoncus. Praesent non tellus accumsan, egestas nisi non, rhoncus magna. Etiam congue convallis condimentum.
+    </p>
+
+    <form name="myForm" action="https://www.w3schools.com/action_page.php" onsubmit="return validateForm()" method="post">
+        <label>Csillaggal jelölt mezők kitöltése kötelező. (*)</label><br><br>
+        <label for="adat0"><b>First name:*</b></label>
+        <input type="text" id="adat0" name="adat0" value="John"><br>
+        <label for="adat1"><b>Last name:*</b></label>
+        <input type="text" id="adat1" name="adat1" value="Doe"><br>
+        <label for="adat2">Last Last name:</label>
+        <input type="text" id="adat2" name="adat2" value="Doee"><br>
+        <label for="adat3">Very Last name:</label>
+        <input type="text" id="adat3" name="adat3" value="Doeee"><br>
+        <label for="adat4">El Lastest name:</label>
+        <input type="text" id="adat4" name="adat4" value="Doeeee"><br>
+        <label for="adat5"><b>Birthdate:*</b></label>
+        <input type="date" id="adat5" name="adat5"
+               min="1900-01-01" max="2022-12-31" required><br>
+        <label for="adat6"><b>Zip code(xxxx):*</b></label>
+        <input type="text" pattern="^\s*\d{4}?$" id="adat6" name="adat6"><br>
+        <input type="radio" name="gender" value="male" checked required="required"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <input type="radio" name="gender" value="apache"> Apache Helikopter <br><br>
+
+        <label>Szerződési feltéelek elfogadása kötelező(Apple), további lehetőségek opcionálisak.</label><br>
+
+        <input type="checkbox" id="apple" name="apple" value="Apple" required>
+        <label for="apple"><b> Apple*</b></label><br>
+        <input type="checkbox" id="pen" name="pen" value="Pen">
+        <label for="pen"> Pen</label><br>
+        <input type="checkbox" id="applepen" name="applepen" value="ApplePen">
+        <label for="applepen"> Applepen</label><br><br>
+
+        <input type="submit" value="Regisztráció">
+    </form>
+
+
+</div>
+
+<hr>
+
+<div id="otodik-par" class="one">
+
+    <h2>5. Táblázat, minden páros sor szürke, minden páratlan piros</h2>
+
+    <table align="center">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+
+</div>
+
+<hr>
+
+<div id="hatodik-par" class="two">
+    <h2>6. Lista + új elem hozzá adása, alsó lista ismétlődés nélküli(más megközelítéssel - tömb script).</h2>
+    <ul id="lista">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <input type="text" id="ujelem" value="Új elem" required>
+    <button type="button" id="ujelemgomb">Hozzá ad</button>
+
+</div>
+
+<div id="hetedik-par" class="one">
+    <!--
+    <p>
+        Ismétlődés nélküli lista (tömbbel megolva).
+    </p>
+    -->
+    <script>
+        // (B1) DUMMY ARRAY
+        var arr = ["Apple", "Banana", "Cherry"];
+        var value = "Meggy";
+        //var value2 = document.getElementById("ujelem").value;
+        if (arr.includes(value) === false) arr.push(value);
+        //if (arr.includes(value2) === false) arr.push(value2);
+
+        // (B2) CREATE LIST
+        var list = "<ul>";
+        for (let i of arr) {
+            list += `<li>${i}</li>`;
+        }
+        list += "</ul>";
+
+        // (B3) APPEND LIST TO CONTAINER
+        document.getElementById("hetedik-par").innerHTML = list;
+    </script>
+
+</div>
+</body>
+</html>
